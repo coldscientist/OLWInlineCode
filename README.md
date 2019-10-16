@@ -5,7 +5,7 @@ OLWInlineCode is a port from "[Inline Code Plugin](https://www.ticklishtechs.net
 > But I was missing one function I’m using very often when I write posts on programming. There is no way in the WYSIWYG editor of WLW to format Text like `this`. In WordPress you can use the `<code></code>` tags for code-like formatting. But in WLW I had to switch to the HTML Code view to add these tags.
 (Benjamin Schröter, plugin author)
 
-## 1. Installation
+## Installation
 To install the plug-in download it from the link [here](https://github.com/coldscientist/olwinlinecode/releases/latest).
 
 By default OLW will look in the Plugins folder inside the application path (e.g: `C:\Users\UserName\AppData\Local\OpenLiveWriter\app-0.5.1.3\Plugins`) but this path will change as OLW auto-updates itself (i.e. the app number will change). To install copy the plugin to that path using the latest `…\app-x.x.x.x` folder present on your system. Each time OLW updates to a new version you will need to re-copy or move the plugin into the new `…\app-x.x.x.x` folder.
@@ -17,7 +17,7 @@ Alternatively use this approach: OLW (like WLW before it) checks the registry fo
 > You will see a new entry in the Insert menu and on the sidebar. This entry is called "Insert Inline Code…" (ah, the text from the attribute goes there). When you click it a small dialog asks for the text and if you exit the dialog with the OK button this text is added to your document inside of `<Code>` tags.
 (Benjamin Schröter, plugin author)
 
-### 2. Compilling
+## Compilling
 You may compile the plugin by yourself instead of downloading it if you want to.
 
 You'll need Microsoft Windows SDK for Windows 7 (7.1) to build this project. It's a bit tricky to install, because it's incompatible with a newer version of the Visual C++ 2010 Redistributable and .NET Framework 4 installed. 
