@@ -12,12 +12,14 @@ By default OLW will look in the Plugins folder inside the application path (e.g:
 
 Alternatively use this approach: OLW (like WLW before it) checks the registry for plugins too and so you can add a registry key telling OLW where to find the plugin. Whilst this feature is supported by OLW this should enable the plugin to survive OLW auto updates without you having to do anything. Just download and extract the plugin to a folder on your harddrive and then add a new registry key to `HKEY_CURRENT_USER\SOFTWARE\OpenLiveWriter\PluginAssemblies` with the name (can be anything) and the location of the plugin. For example:
 
-![OLW PluginAssemblies](InlineCode-OLW-PluginAssemblies.png)
+![OLW PluginAssemblies](Screenshots/InlineCode-OLW-PluginAssemblies.png)
 
 Switch to Open Live Writer, go to the Insert tab, and look in the Plug-ins ribbon group. Select "Insert Inline Code" and the code will be inserted into the document
 
 > When you click it a small dialog asks for the text and if you exit the dialog with the OK button this text is added to your document inside of `<Code>` tags.
 (Benjamin Schröter, plugin author)
+
+![OLWInlineCode](Screenshots/InlineCode-OLW.png)
 
 ## Compilling
 You may compile the plugin by yourself instead of downloading it if you want to.
