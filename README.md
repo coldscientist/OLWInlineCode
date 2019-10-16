@@ -14,7 +14,9 @@ Alternatively use this approach: OLW (like WLW before it) checks the registry fo
 
 ![OLW PluginAssemblies](InlineCode-OLW-PluginAssemblies.png)
 
-> You will see a new entry in the Insert menu and on the sidebar. This entry is called "Insert Inline Code…" (ah, the text from the attribute goes there). When you click it a small dialog asks for the text and if you exit the dialog with the OK button this text is added to your document inside of `<Code>` tags.
+Switch to Open Live Writer, go to the Insert tab, and look in the Plug-ins ribbon group. Select "Insert Inline Code" and the code will be inserted into the document
+
+> When you click it a small dialog asks for the text and if you exit the dialog with the OK button this text is added to your document inside of `<Code>` tags.
 (Benjamin Schröter, plugin author)
 
 ## Compilling
