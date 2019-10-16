@@ -24,7 +24,7 @@ Switch to Open Live Writer, go to the Insert tab, and look in the Plug-ins ribbo
 ## Compilling
 You may compile the plugin by yourself instead of downloading it if you want to.
 
-You'll need Microsoft Windows SDK for Windows 7 (7.1) to build this project. It's a bit tricky to install, because it's incompatible with a newer version of the Visual C++ 2010 Redistributable and .NET Framework 4 installed. 
+You'll need [Microsoft Windows SDK for Windows 7 (7.1)](https://www.microsoft.com/en-us/download/details.aspx?id=8279) to build this project. It's a bit tricky to install, because it's incompatible with a newer version of the Visual C++ 2010 Redistributable and .NET Framework 4 installed. 
 
 * The Windows 7 SDK installs version 10.0.30319 of the Visual C++ 2010 Redistributable. [You must uninstall all versions of the Visual C++ 2010 Redistributable before installing the Windows 7 SDK](https://support.microsoft.com/en-us/help/2717426/windows-sdk-fails-to-install-with-return-code-5100), otherwise you'll receive the errorcode 5010 during installation. After uninstalling the Microsoft Visual C++ 2010 Redistributable products, you may install the Windows 7 SDK.  After installing the Windows 7 SDK, you may then reinstall the newer version of the Visual C++ 2010 Redistributable products, in order to restore the Visual C++ 2010 Redistributable products to their original state.
 * The setup is [blocked](https://stackoverflow.com/questions/31455926/windows-sdk-7-1-setup-failure) by:
