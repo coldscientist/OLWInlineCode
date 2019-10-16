@@ -20,13 +20,15 @@ Alternatively use this approach: OLW (like WLW before it) checks the registry fo
 ### 2. Compilling
 You may compile the plugin by yourself instead of downloading it if you want to.
 
-You'll need Microsoft Windows SDK for Windows 7 (7.1) to build this project. It's a bit tricky to install, because it's incompatible with newer on a computer that has a newer version of the Visual C++ 2010 Redistributable and .NET Framework 4 installed. 
+You'll need Microsoft Windows SDK for Windows 7 (7.1) to build this project. It's a bit tricky to install, because it's incompatible with a newer version of the Visual C++ 2010 Redistributable and .NET Framework 4 installed. 
 
 * The Windows 7 SDK installs version 10.0.30319 of the Visual C++ 2010 Redistributable. [You must uninstall all versions of the Visual C++ 2010 Redistributable before installing the Windows 7 SDK](https://support.microsoft.com/en-us/help/2717426/windows-sdk-fails-to-install-with-return-code-5100), otherwise you'll receive the errorcode 5010 during installation. After uninstalling the Microsoft Visual C++ 2010 Redistributable products, you may install the Windows 7 SDK.  After installing the Windows 7 SDK, you may then reinstall the newer version of the Visual C++ 2010 Redistributable products, in order to restore the Visual C++ 2010 Redistributable products to their original state.
 * The setup is [blocked](https://stackoverflow.com/questions/31455926/windows-sdk-7-1-setup-failure) by:
 
-    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\NET Framework Setup\NDP\v4\Full\Version
-    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\NET Framework Setup\NDP\v4\Client\Version
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\NET Framework Setup\NDP\v4\Full\Version
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\NET Framework Setup\NDP\v4\Client\Version
+```
 
 Change both values temporarily to `4.0.30319` and the setup will let you continue. Make sure you edit the registry with elevated privileges, otherwise you will not be allowed to change the values.
 
@@ -36,4 +38,6 @@ During Windows SDK installation, you need to select only **Tools** from **NET Fr
 
 3. You can compile the code typing the following command at **Command prompt**:
 
-    "C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe" "C:\Users\UserName\Desktop\WlwCodePlugin\WlwCodePlugin.sln"
+```
+"C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe" "C:\Users\hp\Documents\GitHub\OLWInlineCode\WlwCodePlugin\WlwCodePlugin.sln"
+```
