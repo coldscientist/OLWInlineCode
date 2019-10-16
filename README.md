@@ -1,4 +1,4 @@
-# AutoIt-FO2-Splitscreen
+# OLWInlineCode
 
 OLWInlineCode is a port from "[Inline Code Plugin](https://www.ticklishtechs.net/2008/02/21/windows-live-writer-plugin-for-code-in-wordpress/)" (Windows Live Writer) to Open Live Writer.
 
@@ -8,13 +8,13 @@ OLWInlineCode is a port from "[Inline Code Plugin](https://www.ticklishtechs.net
 ## 1. Installation
 To install the plug-in download it from the link [here](https://github.com/coldscientist/olwinlinecode/releases/latest).
 
-By default OLW will look in the Plugins folder inside the application path (e.g: `C:\Users\UserName\AppData\Local\OpenLiveWriter\app-0.5.1.3\Plugins`)  but this path will change as OLW auto-updates itself (i.e. the app number will change). To install copy the plugin (and its supporting txt file in the downloaded Zip package) to that path using the latest `…\app-x.x.x.x` folder present on your system. Each time OLW updates to a new version you will need to re-copy or move the plugin into the new `…\app-x.x.x.x` folder.
+By default OLW will look in the Plugins folder inside the application path (e.g: `C:\Users\UserName\AppData\Local\OpenLiveWriter\app-0.5.1.3\Plugins`) but this path will change as OLW auto-updates itself (i.e. the app number will change). To install copy the plugin to that path using the latest `…\app-x.x.x.x` folder present on your system. Each time OLW updates to a new version you will need to re-copy or move the plugin into the new `…\app-x.x.x.x` folder.
 
 Alternatively use this approach: OLW (like WLW before it) checks the registry for plugins too and so you can add a registry key telling OLW where to find the plugin. Whilst this feature is supported by OLW this should enable the plugin to survive OLW auto updates without you having to do anything. Just download and extract the plugin to a folder on your harddrive and then add a new registry key to `HKEY_CURRENT_USER\SOFTWARE\OpenLiveWriter\PluginAssemblies` with the name (can be anything) and the location of the plugin. For example:
 
 ![OLW PluginAssemblies](InlineCode-OLW-PluginAssemblies.png)
 
-> You will see a new entry in the Insert menu and on the sidebar. This entry is called "Insert Inline Code…" (ah, the text from the attribute goes there). When you click it a small dialog asks for the text and if you exit the dialog with the OK button this text is added to your document inside of <Code> tags.
+> You will see a new entry in the Insert menu and on the sidebar. This entry is called "Insert Inline Code…" (ah, the text from the attribute goes there). When you click it a small dialog asks for the text and if you exit the dialog with the OK button this text is added to your document inside of `<Code>` tags.
 (Benjamin Schröter, plugin author)
 
 ### 2. Compilling
