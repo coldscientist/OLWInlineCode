@@ -5,6 +5,8 @@ OLWInlineCode is a port from "[Inline Code Plugin](https://www.ticklishtechs.net
 > But I was missing one function I’m using very often when I write posts on programming. There is no way in the WYSIWYG editor of WLW to format Text like `this`. In WordPress you can use the `<code></code>` tags for code-like formatting. But in WLW I had to switch to the HTML Code view to add these tags.
 (Benjamin Schröter, plugin author)
 
+See also: [OLW Paste As](https://github.com/coldscientist/OLWPasteAs).
+
 ## Installation
 To install the plug-in download it from the link [here](https://github.com/coldscientist/olwinlinecode/releases/latest).
 
